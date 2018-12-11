@@ -4,7 +4,7 @@
 
 ### 效果图：
 
-![screenshot](https://github.com/SmartArvin/CircleProgress/blob/master/arts/screenshot.gif)
+![screenshot](https://github.com/SmartArvin/ForSmartTvDemos/raw/master/UI%E5%BC%80%E5%8F%91/%E3%80%90%E7%8E%AF%E5%BD%A2%E8%BF%9B%E5%BA%A6%E6%9D%A1%E3%80%91CircleProgress/arts/screenshot.gif)
 
 ### 用法：
 

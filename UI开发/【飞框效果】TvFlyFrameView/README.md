@@ -40,5 +40,5 @@ android:focusable="false"
 
 ## 效果图
 
-![ScreenShot](https://github.com/SmartArvin/TvFlyFrameView/blob/master/screenshot/screenshot.gif)
+![ScreenShot](https://github.com/SmartArvin/ForSmartTvDemos/raw/master/UI%E5%BC%80%E5%8F%91/%E3%80%90%E9%A3%9E%E6%A1%86%E6%95%88%E6%9E%9C%E3%80%91TvFlyFrameView/screenshot/screenshot.gif)
 

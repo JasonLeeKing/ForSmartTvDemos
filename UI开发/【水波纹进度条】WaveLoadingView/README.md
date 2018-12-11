@@ -6,7 +6,7 @@
 
 ## 效果图：
 
-![screenshot](https://github.com/SmartArvin/WaveLoadingView/blob/master/screenshot/screenshot.PNG)
+![screenshot](https://github.com/SmartArvin/ForSmartTvDemos/raw/master/UI%E5%BC%80%E5%8F%91/%E3%80%90%E6%B0%B4%E6%B3%A2%E7%BA%B9%E8%BF%9B%E5%BA%A6%E6%9D%A1%E3%80%91WaveLoadingView/screenshot/screenshot.PNG)
 
 ## 用法：
 
