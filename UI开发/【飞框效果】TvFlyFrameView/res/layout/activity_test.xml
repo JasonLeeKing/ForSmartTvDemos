@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/gray"
+    android:clipChildren="false"
+    android:focusable="false" >
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:clipChildren="false"
+        android:clipToPadding="false"
+        android:focusable="false" >
+
+        <RelativeLayout
+            android:id="@+id/main"
+            android:layout_width="wrap_content"
+            android:layout_height="500dp"
+            android:layout_gravity="center"
+            android:clipChildren="false"
+            android:clipToPadding="false"
+            android:focusable="false"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="290dp"
+                android:layout_height="446dp"
+                android:layout_margin="2dp"
+                android:background="@drawable/shape"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:text="TwoRecyclerView测试"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="290dp"
+                android:layout_height="446dp"
+                android:layout_margin="2dp"
+                android:layout_toRightOf="@+id/textView1"
+                android:background="@color/coral"
+                android:focusable="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <!-- 第3列 -->
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_margin="2dp"
+                android:layout_toEndOf="@+id/textView2"
+                android:background="#7cc23b"
+                android:focusable="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_margin="2dp"
+                android:layout_below="@+id/textView3"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/textView2"
+                android:background="#f1981a"
+                android:focusable="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_margin="2dp"
+                android:layout_below="@+id/textView4"
+                android:layout_toEndOf="@+id/textView2"
+                android:background="#d67759"
+                android:focusable="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <!-- 第四列 -->
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_margin="2dp"
+                android:layout_toEndOf="@+id/textView4"
+                android:background="#5d42a3"
+                android:focusable="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_margin="2dp"
+                android:layout_below="@+id/textView5"
+                android:layout_toEndOf="@+id/textView4"
+                android:background="#2790ec"
+                android:focusable="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:layout_below="@+id/textView6"
+                android:layout_toEndOf="@+id/textView4"
+                android:background="#1fbba6"
+                android:focusable="true"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>
