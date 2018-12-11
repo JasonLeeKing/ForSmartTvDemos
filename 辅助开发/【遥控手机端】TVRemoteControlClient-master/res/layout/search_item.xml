@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="@dimen/search_item_padding" >
+    
+    <ImageView
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content"
+        android:src="@drawable/search_signal"
+        android:id="@+id/signalimage"
+        android:layout_centerVertical="true"
+        
+        />
+    <LinearLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@id/signalimage"
+        android:layout_centerVertical="true"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/search_item_text_marginleft"
+        >
+    <TextView
+        android:id="@+id/search_username"
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content"
+        android:text="@string/search_item_name"
+        android:textColor="@color/device_color"
+        android:textSize="@dimen/search_item_devicename_size"
+        /> 
+    
+    <TextView
+        android:id="@+id/search_ip"
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content"
+        android:text="@string/search_item_name"
+        android:textColor="@color/device_color"
+        android:textSize="@dimen/search_item_deviceip_size"
+        />
+    </LinearLayout>
+    
+    <Button 
+        android:layout_height="32dp" 
+        android:layout_width="60dp"
+        android:text="@string/rename"
+        android:textSize="12sp"
+        android:id="@+id/search_rename_btn"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:focusable="false"
+        android:background="@drawable/btn_rename"
+        android:textColor="@color/controller_search_color"
+        />
+
+</RelativeLayout>

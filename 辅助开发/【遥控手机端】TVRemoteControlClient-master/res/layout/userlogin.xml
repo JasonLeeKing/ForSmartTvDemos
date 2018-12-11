@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mouse_topbg"
+        android:padding="10dp" >
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/mouse_topreturn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@+string/userlogin"
+            android:textColor="@color/set_title_text_color"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="76dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/rename_text_margintop"
+            android:gravity="center"
+            android:text="@string/userlogintitle"
+            android:textColor="@color/user_register_title_color"
+            android:textSize="24sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:gravity="center_vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search_dividerlarge" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/edit_user_name"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_inputbox"
+            android:hint="@string/username"
+            android:maxLength="20"
+            android:selectAllOnFocus="true"
+            android:textColor="@color/user_input_edit_color" />
+
+        <EditText
+            android:id="@+id/edit_user_pwd"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/bg_inputbox"
+            android:hint="@string/userpwd"
+            android:maxLength="20"
+            android:inputType="textPassword"
+            android:textColor="@color/user_input_edit_color" />
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="250dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/userlogin"
+            android:text="@string/userloginbtn" />
+    </LinearLayout>
+
+</RelativeLayout>

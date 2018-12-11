@@ -1,0 +1,149 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" 
+    android:background="#96CDCD">
+
+    <!--for tv small window  start  -->
+    <RelativeLayout
+       android:id="@+id/tv_win"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content">
+       <View 
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@android:color/black"
+           />
+   </RelativeLayout>
+   <!--for tv small window  end  -->
+   
+   <LinearLayout 
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_centerHorizontal="true"
+       android:layout_alignParentBottom="true"
+       android:layout_margin="50dp"
+       android:orientation="vertical"
+       android:background="#AA000000"
+       >
+       
+       <LinearLayout 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:padding="5dp"
+           android:gravity="center_vertical"
+           android:orientation="horizontal"
+           >
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="50dp"
+               android:gravity="center_vertical|left"
+               android:text="X"
+               android:textSize="25sp"
+               android:textColor="@android:color/white"
+               
+               />
+           <SeekBar 
+               android:id="@+id/seekbar_x"
+               android:layout_width="250dp"
+               android:layout_height="25dp"
+               android:layout_marginLeft="100dp"
+               android:max="100"
+               android:progress="0"
+               />
+       </LinearLayout>
+       
+       <LinearLayout 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:padding="5dp"
+           android:gravity="center_vertical"
+           android:orientation="horizontal"
+           >
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="50dp"
+               android:gravity="center_vertical|left"
+               android:text="Y"
+               android:textSize="25sp"
+               android:textColor="@android:color/white"
+               
+               />
+           <SeekBar 
+               android:id="@+id/seekbar_y"
+               android:layout_width="250dp"
+               android:layout_height="25dp"
+               android:layout_marginLeft="100dp"
+               android:max="100"
+               android:progress="0"
+               />
+       </LinearLayout>
+       
+       <LinearLayout 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:padding="5dp"
+           android:gravity="center_vertical"
+           android:orientation="horizontal"
+           >
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="50dp"
+               android:gravity="center_vertical|left"
+               android:text="W"
+               android:textSize="25sp"
+               android:textColor="@android:color/white"
+               
+               />
+           <SeekBar 
+               android:id="@+id/seekbar_w"
+               android:layout_width="250dp"
+               android:layout_height="25dp"
+               android:layout_marginLeft="100dp"
+               android:max="100"
+               android:progress="100"
+               />
+       </LinearLayout>
+       
+       <LinearLayout 
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:padding="5dp"
+           android:gravity="center_vertical"
+           android:orientation="horizontal"
+           >
+           <TextView 
+               android:layout_width="wrap_content"
+               android:layout_height="50dp"
+               android:gravity="center_vertical|left"
+               android:text="H"
+               android:textSize="25sp"
+               android:textColor="@android:color/white"
+               
+               />
+           <SeekBar 
+               android:id="@+id/seekbar_h"
+               android:layout_width="250dp"
+               android:layout_height="25dp"
+               android:layout_marginLeft="100dp"
+               android:max="100"
+               android:progress="100"
+               />
+       </LinearLayout>
+       
+       <Button 
+           android:id="@+id/ok"
+           android:layout_width="350dp"
+           android:layout_height="50dp"
+           android:layout_gravity="center_horizontal"
+           android:gravity="center"
+           android:text="确定"
+           android:textSize="25sp"
+           android:textColor="@android:color/white"
+           />
+       
+   </LinearLayout>
+    
+</RelativeLayout>

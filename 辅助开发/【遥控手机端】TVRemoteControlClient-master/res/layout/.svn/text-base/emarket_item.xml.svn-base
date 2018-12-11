@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/emarket_item_padding" >
+
+    <RelativeLayout
+        android:id="@+id/emarket_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/emarketapp_iv"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/defualt"
+             />
+
+        <TextView
+            android:id="@+id/emarketapp_name"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/emarket_item_appname_marginleft"
+            android:layout_marginTop="@dimen/emarket_item_appname_margintop"
+            android:layout_toRightOf="@id/emarketapp_iv"
+            android:gravity="left"
+            android:text="@string/emarket_item_appname"
+            android:textColor="@color/appname_color"
+            android:textSize="@dimen/emarket_item_appname_size" />
+
+        <TextView
+            android:id="@+id/emarketapp_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emarketapp_name"
+            android:layout_marginLeft="@dimen/emarket_item_version_marginleft"
+            android:layout_toRightOf="@id/emarketapp_iv"
+            android:text="@string/emarket_item_version"
+            android:textColor="@color/appcapability_color"
+            android:textSize="@dimen/emarket_item_appversion_size" />
+
+        <Button
+            android:id="@+id/emarket_install"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:text="@string/emarket_item_installbtn" 
+            android:gravity="center"
+            android:background="@drawable/btn_install"
+            android:textColor="#E0F7FF"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/emarketapp_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/emarket_top"
+        android:layout_marginTop="@dimen/emarket_item_appdescription_margintop"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lines="3"
+        android:textColor="@color/appcapability_color"
+        android:textSize="@dimen/emarket_item_appdescription_size" />
+
+</RelativeLayout>

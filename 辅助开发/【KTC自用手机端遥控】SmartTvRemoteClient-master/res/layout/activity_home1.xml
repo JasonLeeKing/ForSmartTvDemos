@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ktc.tvremote.client.views.SuperSlidingPaneLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/superSlidingPaneLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_slidemenu_bg"
+    app:mode="default_"
+    app:compat_sliding="false">
+    
+    <include layout="@layout/layout_slidemenu"/>
+    
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <include layout="@layout/slidemenu_top_title_bar"/>
+        
+        <android.support.v4.view.ViewPager
+	        android:id="@+id/remote_viewpager"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"/>
+
+    	<!-- <include layout="@layout/layout_footer"/> -->
+        <!-- <include layout="@layout/layout_remote_home"/> -->
+        
+    </LinearLayout>
+
+</com.ktc.tvremote.client.views.SuperSlidingPaneLayout>

@@ -1,0 +1,237 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    >
+
+    <!-- 上下左右确定 -->
+	<RelativeLayout
+	    android:id="@+id/ly_controller_dpad"
+	    android:layout_width="260dp"
+	    android:layout_height="260dp"
+	    android:padding="10dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_alignParentTop="true"
+	    android:gravity="center_horizontal"
+	    android:background="@drawable/shape_circle_bg"
+	    >
+	    <ImageButton
+	        android:id="@+id/key_dpad_up"
+	        style="@style/onClick"
+	        android:layout_width="70dp"
+	        android:layout_height="70dp"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:src="@drawable/ic_dpad_direct"
+	        android:background="@drawable/selector_key"/>
+	    
+        <ImageButton
+	        android:id="@+id/key_dpad_left"
+	        style="@style/onClick"
+	        android:layout_width="70dp"
+	        android:layout_height="70dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/ic_dpad_direct"
+	        android:background="@drawable/selector_key"/>
+	    
+	    <Button
+	        android:id="@+id/key_dpad_center"
+	        style="@style/onClick"
+	        android:layout_width="90dp"
+	        android:layout_height="90dp"
+	        android:layout_centerInParent="true"
+	        android:text="OK"
+	        android:gravity="center"
+	        android:textColor="@color/white"
+	        android:textSize="22sp"
+	        android:background="@drawable/selector_key_ok"/>
+	    
+	    <ImageButton
+	        android:id="@+id/key_dpad_right"
+	        style="@style/onClick"
+	        android:layout_width="70dp"
+	        android:layout_height="70dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/ic_dpad_direct"
+	        android:background="@drawable/selector_key"/>
+	    
+	    <ImageButton
+	        android:id="@+id/key_dpad_down"
+	        style="@style/onClick"
+	        android:layout_width="70dp"
+	        android:layout_height="70dp"
+	        android:layout_alignParentBottom="true"
+	        android:layout_centerHorizontal="true"
+	        android:src="@drawable/ic_dpad_direct"
+	        android:background="@drawable/selector_key"/>
+	</RelativeLayout>
+	
+	<!-- 音量&菜单&信源 -->
+	<RelativeLayout
+	    android:id="@+id/ly_controller_volume"
+	    android:layout_width="300dp"
+	    android:layout_height="150dp"
+	    android:layout_below="@+id/ly_controller_dpad"
+	    android:layout_marginTop="20dp"
+	    android:layout_centerHorizontal="true"
+	    >
+	    <!-- VOL -->
+	    <RelativeLayout 
+	        android:layout_width="60dp"
+	        android:layout_height="150dp"
+	        android:layout_alignParentLeft="true"
+	        android:padding="5dp"
+	        android:background="@drawable/shape_rectangle_bg"
+	        >
+	        <Button 
+	            android:id="@+id/key_vol_up"
+	            style="@style/onClick"
+	            android:layout_width="50dp"
+	            android:layout_height="50dp"
+	            android:layout_alignParentTop="true"
+	            android:layout_centerHorizontal="true"
+	            android:text="@string/str_key_add"
+	            android:textSize="22sp"
+	            android:textColor="@color/white"
+	            android:gravity="center"
+	            android:background="@drawable/selector_key"
+	            />
+	        <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_centerInParent="true"
+	            android:text="VOL"
+	            android:textSize="18sp"
+	            android:textColor="@android:color/white"
+	            android:gravity="center"
+	            />
+	        <Button 
+	            android:id="@+id/key_vol_down"
+	            style="@style/onClick"
+	            android:layout_width="50dp"
+	            android:layout_height="50dp"
+	            android:layout_alignParentBottom="true"
+	            android:layout_centerHorizontal="true"
+	            android:text="@string/str_key_reduce"
+	            android:textSize="22sp"
+	            android:textColor="@color/white"
+	            android:gravity="center"
+	            android:background="@drawable/selector_key"
+	            />
+	    </RelativeLayout>
+	    
+	    <!-- HOME&speach -->
+	    <RelativeLayout 
+	        android:layout_width="90dp"
+	        android:layout_height="150dp"
+	        android:layout_centerInParent="true"
+	        android:gravity="center_horizontal"
+	        >
+	        <com.ktc.tvremote.client.views.PicButton 
+	            android:id="@+id/key_home"
+	            style="@style/onClick"
+	            android:layout_width="55dp"
+	            android:layout_height="55dp"
+	            android:layout_alignParentTop="true"
+	            android:gravity="center"
+	            app:pt_img="@drawable/ic_home"
+	            android:background="@drawable/selector_key_ok"
+	            />
+	        <com.ktc.tvremote.client.views.PicButton 
+	            android:id="@+id/key_speach"
+	            style="@style/onClick"
+	            android:layout_width="55dp"
+	            android:layout_height="55dp"
+	            android:layout_alignParentBottom="true"
+	            android:gravity="center"
+	            app:pt_img="@drawable/ic_speach"
+	            android:background="@drawable/selector_key_ok"
+	            />
+	    </RelativeLayout>
+	    
+	    <!-- CH -->
+	    <RelativeLayout 
+	        android:layout_width="60dp"
+	        android:layout_height="150dp"
+	        android:padding="5dp"
+	        android:layout_alignParentRight="true"
+	        android:background="@drawable/shape_rectangle_bg"
+	        >
+	        <Button 
+	            android:id="@+id/key_ch_up"
+	            style="@style/onClick"
+	            android:layout_width="50dp"
+	            android:layout_height="50dp"
+	            android:layout_alignParentTop="true"
+	            android:layout_centerHorizontal="true"
+	            android:text="@string/str_key_add"
+	            android:textSize="22sp"
+	            android:textColor="@color/white"
+	            android:gravity="center"
+	            android:background="@drawable/selector_key"
+	            />
+	        <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_centerInParent="true"
+	            android:text="CH"
+	            android:textSize="18sp"
+	            android:textColor="@android:color/white"
+	            android:gravity="center"
+	            />
+	        <Button 
+	            android:id="@+id/key_ch_down"
+	            style="@style/onClick"
+	            android:layout_width="50dp"
+	            android:layout_height="50dp"
+	            android:layout_alignParentBottom="true"
+	            android:layout_centerHorizontal="true"
+	            android:text="@string/str_key_reduce"
+	            android:textSize="22sp"
+	            android:textColor="@color/white"
+	            android:gravity="center"
+	            android:background="@drawable/selector_key"
+	            />
+	    </RelativeLayout>
+	</RelativeLayout>
+	
+	<!-- menu&back -->
+	<RelativeLayout
+	    android:id="@+id/key_ly1"
+	    android:layout_width="300dp"
+	    android:layout_height="70dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_below="@+id/ly_controller_volume"
+	    android:layout_marginTop="30dp"
+	    android:gravity="center_horizontal"
+	    >
+        <com.ktc.tvremote.client.views.PicButton
+	        android:id="@+id/key_back"
+	        style="@style/onClick"
+	        android:layout_width="55dp"
+	        android:layout_height="55dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        app:pt_img="@drawable/ic_back"
+	        android:background="@drawable/selector_key_ok"/>
+	    
+	    
+	    <com.ktc.tvremote.client.views.PicButton
+	        android:id="@+id/key_menu"
+	        style="@style/onClick"
+	        android:layout_width="55dp"
+	        android:layout_height="55dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        app:pt_img="@drawable/ic_menu"
+	        android:background="@drawable/selector_key_ok"/>
+	    
+	</RelativeLayout>
+	
+	
+	
+</RelativeLayout>

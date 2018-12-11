@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mouse_topbg"
+        android:id="@+id/emarket_top"
+        android:padding="@dimen/emarket_top_padding"
+        >
+        
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/emarket_title"
+             android:textSize="@dimen/emarket_title_size"
+             android:textColor="@color/emarket_title_color"
+             android:layout_centerInParent="true"
+             />
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:background="@drawable/btn_refresh"
+             android:id="@+id/emarket_refresh"
+             />
+         
+    </RelativeLayout>
+    
+    <FrameLayout 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@id/emarket_top"
+        
+        >
+        
+    <ListView 
+        android:id="@+id/emarket_applist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/search_dividersmall"
+        android:visibility="invisible"
+        />
+    
+    <ImageView
+        android:id="@+id/emarket_ivLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search_loading"
+        android:layout_gravity="center"
+         />
+    
+    <TextView
+        android:id="@+id/emarket_tvloading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取数据"
+        android:layout_gravity="center"
+        android:visibility="invisible"/>
+    
+    </FrameLayout>
+
+</RelativeLayout>

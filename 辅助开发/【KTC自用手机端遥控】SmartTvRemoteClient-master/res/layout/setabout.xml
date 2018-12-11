@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mouse_topbg"
+        android:padding="10dp" >
+
+        <Button
+			android:id="@+id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/mouse_topreturn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@+string/set_about_title"
+            android:textColor="@color/set_title_text_color"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:src="@drawable/logo"
+			android:layout_width="80dip"
+			android:layout_height="80dip"
+            />
+
+        <TextView
+            android:id="@+id/soft_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/set_about_text_color"
+            android:layout_marginTop="15dp"
+            android:textSize="18sp"
+            android:text="@string/set_soft_name" />
+
+        <TextView
+            android:id="@+id/version_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/soft_name"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/set_about_text_color"
+            android:layout_marginTop="15dp"
+            android:text="@string/set_soft_version_name" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/soft_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:src="@drawable/soniq_logo_big" />
+
+</RelativeLayout>

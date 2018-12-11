@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!--  -->
+    <color name="color_slidemenu_bg">#9370DB</color>
+    <color name="color_controler_bg">#1E64E8</color>
+    
+    <!-- key normal -->
+    <color name="color_key_normal">#00000000</color>
+    
+    <!-- key selector -->
+    <color name="color_key_selected">#40E6E8</color>
+    
+    <!-- color -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="trans">#00000000</color>
+    
+    
+    
+    
+    
+    <color name="channel_color">#00BFFF</color>
+    <color name="volume_color">#00BFFF</color>
+    <color name="controller_title_color">#F4C226</color>
+    <color name="appmanage_title_color">#F4C226</color>
+    <color name="emarket_title_color">#F4C226</color>
+    <color name="ipaddress_color">#F4C226</color>
+    <color name="device_color">#00BFFF</color>
+    <color name="appname_color">#00BFFF</color>
+    <color name="appcapability_color">#00BFFF</color>
+    <color name="appversion_color">#00BFFF</color>
+
+    <color name="tvname_color">#00BFFF</color>
+    <color name="popup_bg_color">#CECFCF</color>
+    <color name="mouse_confirm_color">#00BFFF</color>
+    <color name="mouse_menu_color">#00BFFF</color>
+    <color name="mouse_return_color">#00BFFF</color>
+    <color name="controller_search_color">#00BFFF</color>
+    <color name="popup_item_choose_color">#93989A</color>
+    <color name="popup_item_line_color">#0C5D7F</color>
+    <color name="popup_item_open_color">#FD472B</color>
+    <color name="popup_item_text_color">#007AFF</color>
+    
+    <color name="set_title_text_color">#F4C226</color>
+    <color name="set_tag_text_color">#F4C226</color>
+    <color name="set_item_text_color">#00BFFF</color>
+
+    <color name="user_register_title_color">#00BFFF</color>
+    <color name="user_input_edit_color">#F4C226</color>
+ 
+    <color name="set_about_text_color">#FFFFFF</color>
+</resources>

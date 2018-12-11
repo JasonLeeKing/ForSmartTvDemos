@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/popup_bg_color"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:padding="@dimen/popup_item_padding" >
+
+    <TextView
+        android:id="@+id/pop_undownload"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/popup_item_text_margintop"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/download_pop_undownload"
+        android:textColor="@color/popup_item_text_color"
+        android:textSize="@dimen/popup_item_text_size" />
+
+    <LinearLayout
+        android:id="@+id/underline3"
+        style="@style/popup_item_line"
+        android:layout_below="@id/pop_undownload"
+        android:orientation="vertical" />
+
+    <TextView
+        android:id="@+id/pop_cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/underline3"
+        android:layout_marginTop="@dimen/popup_item_text_margintop"
+        android:clickable="true"
+        android:gravity="center"
+        android:text="@string/pop_menu_cancel"
+        android:textColor="@color/popup_item_text_color"
+        android:textSize="@dimen/popup_item_text_size" />
+
+</RelativeLayout>

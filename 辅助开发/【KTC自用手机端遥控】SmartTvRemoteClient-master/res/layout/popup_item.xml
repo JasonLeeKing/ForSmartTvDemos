@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content"  
+    android:gravity="center_horizontal"  
+    android:orientation="vertical" 
+    android:background="@color/popup_bg_color"
+    android:padding="@dimen/popup_item_padding"
+ >
+
+    
+    
+    <TextView  
+        android:id="@+id/pop_title"  
+         android:layout_width="fill_parent"  
+        android:layout_height="wrap_content"  
+        android:text="@string/popup_item_open"  
+        android:gravity="center"  
+        android:textColor="@color/popup_item_open_color"
+        android:textSize="@dimen/popup_item_text_size"
+        android:clickable="true"
+         />  
+  
+    <LinearLayout
+        android:id="@+id/underline2"
+        android:layout_below="@id/pop_title"
+        style="@style/popup_item_line"
+        android:orientation="vertical"
+         />
+    
+    <TextView  
+        android:id="@+id/pop_unbundling"  
+       android:layout_below="@id/underline2"
+       android:layout_width="fill_parent"  
+       android:layout_height="wrap_content"  
+       android:text="@string/popup_item_uninstall"  
+       android:gravity="center"
+       android:layout_marginTop="@dimen/popup_item_text_margintop"
+       android:textColor="@color/popup_item_text_color"
+       android:textSize="@dimen/popup_item_text_size"
+       android:clickable="true"
+        />  
+        
+    <LinearLayout
+        android:id="@+id/underline3"
+        android:layout_below="@id/pop_unbundling"
+        style="@style/popup_item_line"
+        android:orientation="vertical" />
+    
+    <TextView  
+        android:id="@+id/tv_cancel"  
+       android:layout_below="@id/underline3"
+       android:layout_width="fill_parent"  
+       android:layout_height="wrap_content"  
+       android:text="@string/popup_item_cancel"  
+       android:gravity="center"
+       android:layout_marginTop="@dimen/popup_item_text_margintop"
+       android:textColor="@color/popup_item_text_color"
+       android:textSize="@dimen/popup_item_text_size"
+       android:clickable="true"
+        />   
+ 
+</RelativeLayout>

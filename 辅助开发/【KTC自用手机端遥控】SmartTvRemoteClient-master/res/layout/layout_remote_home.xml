@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_controler_bg">
+
+    <ScrollView 
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+        <RelativeLayout 
+            android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:padding="20dp"
+            >
+            
+            <!-- key power&source&mute -->
+			<RelativeLayout
+			    android:id="@+id/ly_key_power"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content">
+			    
+			    <Button
+			        android:id="@+id/key_shutdown"
+			        style="@style/onClick"
+			        android:layout_width="45dp"
+			        android:layout_height="45dp"
+			        android:layout_alignParentLeft="true"
+			        android:layout_alignParentTop="true"
+			        android:background="@drawable/ic_shutdown"
+			        />
+			    <TextView 
+			        android:id="@+id/txt_dev_name"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_centerInParent="true"
+			        android:textSize="18sp"
+			        android:textColor="@color/white"
+			        />
+			    <com.ktc.tvremote.client.views.PicButton 
+			        android:id="@+id/key_mute"
+			        style="@style/onClick"
+			        android:layout_width="50dp"
+			        android:layout_height="50dp"
+			        android:layout_toLeftOf="@+id/key_input"
+			        android:layout_marginRight="25dp"
+        			app:pt_img="@drawable/ic_mute"
+        			android:background="@drawable/selector_key_ok"
+			        />
+			    
+			    <com.ktc.tvremote.client.views.PicButton 
+			        android:id="@+id/key_input"
+			        style="@style/onClick"
+			        android:layout_width="50dp"
+			        android:layout_height="50dp"
+			        android:layout_alignParentTop="true"
+			        android:layout_alignParentRight="true"
+        			app:pt_img="@drawable/ic_input"
+        			android:background="@drawable/selector_key_ok"
+			        />
+			</RelativeLayout>
+			
+			
+			<!-- key dpad -->
+			<LinearLayout 
+			    android:id="@+id/ly_key_dpad"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:layout_below="@+id/ly_key_power"
+			    android:layout_marginTop="20dp"
+			    android:orientation="vertical"
+			    >
+				<include layout="@layout/layout_remote_controller"/>	    
+			</LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

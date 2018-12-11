@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/slidemenu"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_slidemenu_bg">
+    
+    <RelativeLayout 
+        android:id="@+id/slide_head_ly"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:padding="10dp"
+        >
+        <TextView
+            android:id="@+id/slide_head_title"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_above="@+id/slide_head_second"
+	        android:layout_marginBottom="5dp"
+	        android:gravity="center"
+	        android:text="@string/app_name"
+	        android:textSize="20sp"
+	        android:textColor="@android:color/white"/>
+        
+        <TextView
+            android:id="@+id/slide_head_second"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentBottom="true"
+	        android:layout_marginBottom="15dp"
+	        android:gravity="center"
+	        android:text="一切只为让生活更简单！"
+	        android:textSize="15sp"
+	        android:textColor="@android:color/white"/>
+    </RelativeLayout>
+    
+    
+    <LinearLayout 
+        android:id="@+id/slide_content_ly"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slide_head_ly"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp"
+        >
+        <Button
+            android:id="@+id/slide_menu_splash"
+            style="@style/onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="@string/str_slidemenu_splash"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@null"/>
+        
+        <Button
+            android:id="@+id/slide_menu_filemanager"
+            style="@style/onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="@string/str_slidemenu_filemanager"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@null"/>
+        
+        <Button
+            android:id="@+id/slide_menu_appmanager"
+            style="@style/onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="@string/str_slidemenu_appmanager"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@null"/>
+        
+        <Button
+            android:id="@+id/slide_menu_media"
+            style="@style/onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="@string/str_slidemenu_media"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@null"/>
+        
+        <Button
+            android:id="@+id/slide_menu_screencap"
+            style="@style/onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="@string/str_slidemenu_screen"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@null"/>
+        
+        <Button
+            android:id="@+id/slide_menu_laboratory"
+            style="@style/onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="@string/str_slidemenu_laboratory"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@null"/>
+        
+    	<Button
+            android:id="@+id/slide_menu_feedback"
+            style="@style/onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="@string/str_slidemenu_feedback"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@null"/>
+    	
+    	<Button
+            android:id="@+id/slide_menu_about"
+            style="@style/onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="@string/str_slidemenu_about"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@null"/>
+    	
+    	<Button
+            android:id="@+id/slide_menu_settings"
+            style="@style/onClick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="@string/str_slidemenu_setting"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@null"/>
+    	
+    </LinearLayout>
+        
+    <TextView 
+        android:id="@+id/txt_allright"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:gravity="center"
+        android:text="\@KTC 版权所有2017-2020"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        />
+
+</RelativeLayout>

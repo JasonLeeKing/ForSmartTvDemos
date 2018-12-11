@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:padding="@dimen/appmanage_item_padding" >
+
+    <ImageView
+        android:id="@+id/download_task_ico"
+        android:layout_width="@dimen/appmanage_item_width"
+        android:layout_height="@dimen/appmanage_item_height"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/appmanage_item_iv_marginleft"
+        android:src="@drawable/logo" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/appmanage_item_tv_marginleft"
+        android:layout_toRightOf="@id/download_task_ico" 
+		android:paddingTop="3dip" 
+		android:paddingBottom="3dip" >
+
+        <TextView
+            android:id="@+id/download_task_appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/appmanage_item_appname_margintop"
+            android:gravity="center"
+            android:text="@string/appmanage_item_appname"
+            android:textColor="@color/appname_color"
+            android:textSize="@dimen/appmanage_item_appname_size" />
+
+        <TextView
+            android:id="@+id/download_task_device_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/download_task_appname"
+            android:text="@string/appmanage_item_version"
+            android:textColor="@color/appcapability_color"
+            android:textSize="@dimen/appmanage_item_appversion_size" />
+
+        <TextView
+            android:id="@+id/download_task_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="2dp"
+            android:text="@string/waitting_for_download"
+            android:textColor="@color/appcapability_color" />
+    </RelativeLayout>
+
+</RelativeLayout>

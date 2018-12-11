@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/soniq/!svn/ver/341/android/SoniqTVRemoteControl/res/anim
+END
+push_left_in.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/soniq/!svn/ver/341/android/SoniqTVRemoteControl/res/anim/push_left_in.xml
+END
+tran_in.xml
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/soniq/!svn/ver/341/android/SoniqTVRemoteControl/res/anim/tran_in.xml
+END
+push_no_move.xml
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/soniq/!svn/ver/341/android/SoniqTVRemoteControl/res/anim/push_no_move.xml
+END
+loading_animation.xml
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/soniq/!svn/ver/341/android/SoniqTVRemoteControl/res/anim/loading_animation.xml
+END
+push_up_in.xml
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/soniq/!svn/ver/341/android/SoniqTVRemoteControl/res/anim/push_up_in.xml
+END
+animation.xml
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/soniq/!svn/ver/341/android/SoniqTVRemoteControl/res/anim/animation.xml
+END
+push_right_out.xml
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/soniq/!svn/ver/341/android/SoniqTVRemoteControl/res/anim/push_right_out.xml
+END
+push_down_out.xml
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/soniq/!svn/ver/341/android/SoniqTVRemoteControl/res/anim/push_down_out.xml
+END

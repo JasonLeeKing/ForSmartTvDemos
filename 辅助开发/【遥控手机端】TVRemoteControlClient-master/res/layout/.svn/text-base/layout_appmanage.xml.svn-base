@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+    
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/mouse_topbg"
+        android:id="@+id/appmanage_top"
+        android:padding="@dimen/appmanage_top_padding"
+        >
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="@string/appmanage_title"
+             android:textSize="@dimen/appmanage_title_size"
+             android:textColor="@color/appmanage_title_color"
+             android:layout_centerInParent="true"
+             />
+         <Button
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:background="@drawable/btn_refresh"
+             android:id="@+id/appmanage_refresh"
+             android:layout_centerVertical="true"
+             />
+    </RelativeLayout>
+    
+    <FrameLayout 
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:layout_below="@id/appmanage_top"
+        >
+        
+    <ListView 
+        android:id="@+id/appmanage_applist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@drawable/search_dividersmall"
+        android:visibility="invisible"
+        />
+    
+    <ImageView
+        android:id="@+id/appmanage_ivLoading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/search_loading"
+        android:layout_gravity="center"
+         />
+    
+    <TextView
+        android:id="@+id/appmanage_tvfailed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/appmanage_get_data_failed"
+        android:layout_gravity="center"
+        android:visibility="invisible"/>
+    
+    </FrameLayout>
+    
+    
+    
+</RelativeLayout>

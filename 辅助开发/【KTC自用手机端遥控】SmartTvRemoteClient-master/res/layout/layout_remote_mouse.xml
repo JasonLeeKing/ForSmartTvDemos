@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@color/color_controler_bg">
+
+    <Button
+        android:id="@+id/mousemove"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/mouse_bg"
+        android:clickable="true"
+        android:focusable="true" />
+
+
+    <!-- home&menu&back -->
+	<RelativeLayout
+	    android:id="@+id/mouse_key_ly"
+	    android:layout_width="match_parent"
+	    android:layout_height="70dp"
+	    android:paddingLeft="20dp"
+	    android:paddingRight="20dp"
+	    android:layout_centerHorizontal="true"
+	    android:layout_alignParentBottom="true"
+	    android:layout_marginBottom="10dp"
+	    android:gravity="center_horizontal"
+	    >
+        <com.ktc.tvremote.client.views.PicButton
+	        android:id="@+id/mouse_key_home"
+	        style="@style/onClick"
+	        android:layout_width="55dp"
+	        android:layout_height="55dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerVertical="true"
+	        app:pt_img="@drawable/ic_home"
+	        android:background="@drawable/selector_key_ok"/>
+        
+        <com.ktc.tvremote.client.views.PicButton
+	        android:id="@+id/mouse_key_menu"
+	        style="@style/onClick"
+	        android:layout_width="55dp"
+	        android:layout_height="55dp"
+	        android:layout_centerInParent="true"
+	        app:pt_img="@drawable/ic_menu"
+	        android:background="@drawable/selector_key_ok"/>
+	    
+	    <com.ktc.tvremote.client.views.PicButton
+	        android:id="@+id/mouse_key_back"
+	        style="@style/onClick"
+	        android:layout_width="55dp"
+	        android:layout_height="55dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        app:pt_img="@drawable/ic_back"
+	        android:background="@drawable/selector_key_ok"/>
+	    
+	</RelativeLayout>
+</RelativeLayout>

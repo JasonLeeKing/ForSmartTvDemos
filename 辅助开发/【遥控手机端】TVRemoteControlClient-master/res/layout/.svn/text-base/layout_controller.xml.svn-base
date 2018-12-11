@@ -1,0 +1,265 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/topinmain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/topbackground"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/soniq_logo"
+            />
+
+        <TextView
+            android:id="@+id/devicename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/controller_title_marginleft"
+            android:layout_marginTop="@dimen/controller_title_margintop"
+            android:text="@string/controller_title_name"
+            android:textColor="@color/controller_title_color"
+            android:textSize="@dimen/controller_title_size" />
+
+        <Button
+            android:id="@+id/controll_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/controller_search_margintop"
+            android:background="@drawable/search"
+            android:text="@string/layout_controller_search"
+            android:textColor="@color/controller_search_color"
+            android:textSize="@dimen/controller_search_size" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/topinmain"
+        android:scrollbars="vertical" >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/controller"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/controller_key_marginleft"
+                android:layout_marginRight="@dimen/controller_key_marginright"
+                android:layout_marginTop="@dimen/controller_key_margintop" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" >
+
+                    <ImageView
+                        android:id="@+id/key_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:src="@drawable/control_right_off" />
+
+                    <ImageView
+                        android:id="@+id/key_up"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:src="@drawable/control_up_off" />
+
+                    <ImageView
+                        android:id="@+id/key_down"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:src="@drawable/control_down_off" />
+
+                    <ImageView
+                        android:id="@+id/key_left"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:src="@drawable/control_left_off" />
+
+                    <ImageView
+                        android:id="@+id/key_ok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="#00000000"
+                        android:src="@drawable/control_ok_off" />
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#00000000"
+                    android:clickable="true"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/control_key_menu" />
+
+                <ImageView
+                    android:id="@+id/power"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="#00000000"
+                    android:clickable="true"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/control_key_power" />
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/menu"
+                    android:layout_marginTop="@dimen/controller_key_back_margintop"
+                    android:background="#00000000"
+                    android:clickable="true"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/control_key_back" />
+
+                <ImageView
+                    android:id="@+id/exit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/power"
+                    android:layout_marginTop="@dimen/controller_key_exit_margintop"
+                    android:background="#00000000"
+                    android:clickable="true"
+                    android:contentDescription="@string/description"
+                    android:src="@drawable/control_key_exit" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/setter"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/controller"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/controller_setter_marginleft"
+                android:layout_marginRight="@dimen/controller_setter_marginright"
+                android:layout_marginTop="@dimen/controller_setter_margintop" >
+                
+                
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/channel_up"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/channel_up"
+                            android:longClickable="true" />
+
+                        <Button
+                            android:id="@+id/channel_down"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/channel_down"
+                            android:longClickable="true" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/channel"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/channel_color" />
+                </FrameLayout>
+
+                
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/home"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="#00000000"
+                        android:clickable="true"
+                        android:contentDescription="@string/description"
+                        android:src="@drawable/home_selector" />
+
+                    <ImageView
+                        android:id="@+id/mute"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/controller_mute_margintop"
+                        android:background="#00000000"
+                        android:clickable="true"
+                        android:contentDescription="@string/description"
+                        android:src="@drawable/mute_selector" />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" >
+
+                        <Button
+                            android:id="@+id/volume_add"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/volume_up"
+                            android:longClickable="true" />
+
+                        <Button
+                            android:id="@+id/volume_decrease"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.0"
+                            android:background="@drawable/volume_down"
+                            android:longClickable="true" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="@string/volume"
+                        android:textAppearance="?android:textAppearanceMedium"
+                        android:textColor="@color/volume_color" />
+                </FrameLayout>
+                
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
